@@ -1,0 +1,531 @@
+/* common */
+body{
+  background-color: #d3d3d3;
+  font-family: 'Sansita Swashed', cursive;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  height: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+div h1{
+  margin-bottom: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+  margin: 0 10px;
+}
+a:link{
+  text-decoration: none;
+}
+h2{
+  margin: 0;
+  padding: 0;
+}
+.global_nav{
+  display: flex;
+  flex-direction: row-reverse;
+  color: white;
+}
+
+.global_nav li a:hover{
+  border-bottom: 1px solid #ffffff;
+  text-decoration: none;
+}
+
+.links{
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  margin: 0;
+  padding-bottom: 2px;
+}
+
+.links li a{
+  color: white;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+footer{
+  margin: 0;
+}
+
+.footer_nav{
+  width: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.footer_nav li small{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+#top{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+
+/* index css */
+.index_main{
+  color: white;
+  opacity: 0.6;
+  text-align: center;
+  padding: 40px;
+}
+
+.togallary a{
+  font-size: 50px;
+  padding: 0 10px;
+  margin-top: 20px;
+  background-color: black;
+  opacity: 0.6;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+}
+
+.togallary a:hover{
+  background-color: #ffffff;
+  color: black;
+}
+
+/* index JS Background用*/
+#contentContainer{
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #999;
+}
+#background{
+  z-index: -9999;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* profile  css*/
+#profile_header{
+  background-image: url(img/cloud.JPG);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+#introduce{
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.about{
+  display: flex;
+  flex: 1;
+  margin: auto;
+  margin-top: 10px;
+  display: block;
+}
+
+.profile{
+  display: flex;
+}
+
+.about h2 p{
+  margin: 10px;
+}
+
+.about span{
+  font-weight: bold;
+}
+
+.icon_line::before{
+  content: "";
+  padding-left: 10px;
+  border-left: 7px solid #9cb4a4;
+}
+
+.to_links{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer_prop{
+  background-color: #767671;
+}
+
+.border h1{
+  font-size: 36px;
+  border-bottom: 1px solid #ffffff;
+}
+
+
+/* gallary css*/
+.inner {
+  position: relative;
+  /* max-width: 1080px; */
+  max-width: 100%;
+  min-width: 720px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-gallary{
+  display: flex;
+  flex: 1;
+  margin: 0;
+  padding-bottom: 2px;
+  justify-content: space-around;
+  margin: 0;
+  color: black;
+  border-bottom: 1px solid #000000;
+}
+
+.link-gallary li a:hover{
+  border-bottom: 1px solid #ffffff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.present{
+  padding: 0 20px;
+  background-color: yellow;
+  opacity: 0.6;
+  border-radius: 10px;
+}
+
+.tab_color{
+  padding: 0 5px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 5px 0 0 0;
+}
+
+.block{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #000000;
+  color: black;
+}
+.block a{
+  width: auto;
+  padding: 0 50px;
+}
+.block a:hover{
+  width: auto;
+  background-color: #ffffff;
+}
+.photo_width{
+  width: 100%;
+  /* width: 266px; */
+  /* padding-left: 8px; */
+}
+
+
+/* JS gallary colorbox css */
+.photoGalleryContainer{
+  width: 100%;
+  margin: 0 0 50px;
+}
+
+.column{
+  width: 266px;
+  padding: 0;
+  margin: 2px;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  visibility: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.column a{
+  position: relative;
+  display: flex;
+}
+.cboxLoadedContent{
+  display: flex;
+  background-color: #000;
+}
+.gallary_footer_nav{
+  display: flex;
+  padding: 20px 15px;
+}
+
+/* 大きさ２倍に変換 (PXで表示)*/
+/* .cont .column.w2{
+  width: 536px;
+}
+.cont .column.w2 img{
+  width: 536px;
+} */
+
+/*　masonryへ指示する基本グリッド幅を%で指定するときは、CSSセレクタで指定する必要がある　*/
+.cont .grid_sizer {
+  width: 25%;
+}
+.column {
+  width: 24.5%;
+  margin: 0.25%;
+}
+.column.w2 {
+  width: 49.5%;
+}
+.column.w2 img{
+  width: 100%;
+}
+
+.withColorbox .column{
+  -webkit-transition: background-color .4s linear;
+  transition: background-color .4s linear;
+}
+.withColorbox .column:hover{
+  background: #F0E247;
+}
+
+
+/* animals css */
+.main{
+  position: relative;
+  width: 900px;
+  margin:0 auto;
+}
+
+.controls li{
+  display: inline-block;
+  word-wrap: break-word;
+  margin: 0 0 0 5px;
+  width: auto;
+}
+.controls li a{
+  display: block;
+  padding: 0.5em 0.5em;
+  background: #333;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+}
+.controls li.current a,
+.controls li a:hover{
+  color: #333;
+  background: #f0f0f0;
+}
+.tabContentsContainer>*{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 94%;
+  height: 300px;
+  background-color: white;
+  padding: 3%;
+}
+.animal_photo{
+  width: 300px;
+  height: 200px;
+  float: left;
+  margin-right: 20px;
+}
+
+
+
+/* contsct css */
+table{
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-left: 20px;
+}
+
+th{
+  width: 150px;
+  text-align: left;
+  border: 1px solid #cccccc;
+}
+
+#contact_header{
+  background-image: url(img/whales.JPG);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+#not_ready{
+  background-color: red;
+  opacity: 0.9;
+  z-index: auto;
+}
+.contact_main{
+  margin: auto;
+  margin-left: 10%;
+}
+.access{
+  display: flex;
+
+}
+#contact_info{
+  display: flex;
+  flex-direction: column;
+}
+iframe{
+  width: 450px;
+  height: 350px;
+  margin: 50px;
+}
+
+.contact_table th{
+  border: none;
+  height: 50px;
+  background-color: #d3d3d3;
+}
+
+.form{
+  padding: 10px 0 0 50px;
+  width: 800px;
+  height: 500px;
+}
+.form dl dt{
+  width: 165px;
+  padding: 10px 0;
+  float: left;
+  clear: both;
+}
+.form dl dd{
+  padding: 10px 0;
+}
+.form .name{
+  width: 240px;
+  height: 30px;
+}
+.form .email{
+  width: 300px;
+  height: 30px;
+}
+.form .type{
+  width: 180px;
+  height: 30px;
+}
+.form .message{
+  width: 600px;
+  height: 150px;
+}
+.form .required::after{
+  content: "*";
+  color: #ff0000;
+}
+.attention{
+  margin: 20px 0 0 165px;
+}
+.submit_btn{
+  width: 100px;
+  padding: 0 10px;
+  background-color: #009cd3;
+  color: #ffffff;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 5px;
+  border: 3px solid #009cd3;
+  margin-left: 165px;
+}
+.submit_btn:hover{
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+}
+
+
+
+/* responsive */
+@media screen and (max-width: 600px) {
+
+  body{
+    width: 100%;
+    font-size: 3.5vw;
+  }
+  h1{
+    font-size: 7.2vw;
+  }
+  h2{
+    font-size: 6vw;
+  }
+
+  .global_nav{
+    margin-top: 30px;
+  }
+  .link{
+    display: block;
+  }
+  .profile{
+    display: block;
+  }
+  .about, .profile_pic{
+    width: 100%;
+  }
+  #profile_header{
+    background-image: url(img/cloud-resp.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100%;
+    padding-bottom: 0;
+  }
+}
+
+
+/* loading用css */
+.loaderSymbol {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  width: 32px;
+  height: 32px;
+  background: url(img/loader.gif);
+  behavior: url(PIE.htc);
+}
+/* tips共通スタイル */
+.tipsContentContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  min-height: 1.5em;
+  font-size: 1.2em;
+  color: #fff;
+  background: rgba( 0, 0, 0, 0.8);
+  padding: 0px;
+  margin: 0px;
+  border-radius: 8px;
+  behavior: url(PIE.htc);
+}
+
+
+.ig-b-v-24{
+
+  margin-top: -40px;
+  margin-left: 50px;
+}
