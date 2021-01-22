@@ -1,10 +1,10 @@
-(function(){
+;(function(){
 
   var options = {
     minWidth: 800,
     minHeight: 600,
     images: {
-      dir: 'taka_web/img/index/',
+      dir: 'img/index/',
       path: [
         '001.JPG',
         '002.JPG',
