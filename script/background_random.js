@@ -4,7 +4,7 @@
     minWidth: 800,
     minHeight: 600,
     images: {
-      dir: 'img/index/',
+      dir: '../img/index/',
       path: [
         '001.JPG',
         '002.JPG',
