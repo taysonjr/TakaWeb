@@ -6,7 +6,7 @@
     images: {
       dir: 'img/index/',
       path: [
-        '001.jpg',
+        '003.jpg',
         '002.jpg'
       ],
       current: 0,
