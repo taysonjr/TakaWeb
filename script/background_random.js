@@ -23,7 +23,6 @@
         '015.jpg',
         '016.jpg',
         '017.jpg'
-        
       ],
       current: 0,
       duration: 2000
