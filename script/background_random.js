@@ -6,23 +6,8 @@
     images: {
       dir: 'img/index/',
       path: [
-        '001.jpg',
-        '002.JPG',
-        '003.JPG',
-        '004.JPG',
-        '005.JPG',
-        '006.JPG',
-        '007.JPG',
-        '008.JPG',
-        '009.JPG',
-        '010.JPG',
-        '011.JPG',
-        '012.JPG',
-        '013.JPG',
-        '014.JPG',
-        '015.JPG',
-        '016.JPG',
-        '017.JPG'
+        '001.jpg'
+        
       ],
       current: 0,
       duration: 2000
