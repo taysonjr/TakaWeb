@@ -307,49 +307,6 @@ footer{
 }
 
 
-/* animals css */
-.main{
-  position: relative;
-  width: 900px;
-  margin:0 auto;
-}
-
-.controls li{
-  display: inline-block;
-  word-wrap: break-word;
-  margin: 0 0 0 5px;
-  width: auto;
-}
-.controls li a{
-  display: block;
-  padding: 0.5em 0.5em;
-  background: #333;
-  color: #fff;
-  border-radius: 8px 8px 0 0;
-}
-.controls li.current a,
-.controls li a:hover{
-  color: #333;
-  background: #f0f0f0;
-}
-.tabContentsContainer>*{
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 94%;
-  height: 300px;
-  background-color: white;
-  padding: 3%;
-}
-.animal_photo{
-  width: 300px;
-  height: 200px;
-  float: left;
-  margin-right: 20px;
-}
-
-
-
 /* contsct css */
 table{
   border-spacing: 0;
