@@ -22,11 +22,11 @@
 			init: function(){
 				var _sel = param.loaderSymbolSelector;
 				if( $(_sel).length == 0 ) {
-					$('<div>').prependTo('body').addClass(replaceString(_sel, '\\.')).hide().fadeIn(1000);
+					$('<div>').prependTo('body').addClass(replaceString(_sel, '\\.')).hide().fadeIn(50);
 				}
 			},
 			destroy: function(){
-				$(param.loaderSymbolSelector).fadeOut(500,
+				$(param.loaderSymbolSelector).fadeOut(100,
 					function(){
 						$(this).remove();
 						revealItems();
