@@ -141,15 +141,25 @@ footer{
 }
 
 .about{
-  display: flex;
-  flex: 1;
   margin: auto;
   margin-top: 10px;
+  max-width: 700px;
   display: block;
+}
+
+section{
+  margin-left: 25px;
+  max-width: 400px;
 }
 
 .profile{
   display: flex;
+  flex-wrap: wrap;
+}
+
+.profile_pic{
+  max-width: 300px;
+  max-height: 327px;
 }
 
 .about h2 p{
@@ -435,12 +445,15 @@ iframe{
   .link{
     display: block;
   }
-  .profile{
+   .about{
+    text-align: center;
+  }
+  section{
+    margin-left: 0;
+    width: 100%;
     display: block;
   }
-  .about, .profile_pic{
-    width: 100%;
-  }
+
   #profile_header{
     background-image: url(img/cloud-resp.png);
     background-repeat: no-repeat;
